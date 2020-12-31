@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/orderHistoryEmpty"
+        android:text = "@string/no_order_history"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <ListView
+            android:id="@+id/orderHistoryList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:dividerHeight="16.0sp">
+        </ListView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F5F5DC"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:autofillHints=""
+                android:backgroundTint="@android:color/holo_orange_dark" tools:targetApi="lollipop">
+            </EditText>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:autofillHints=""
+                android:backgroundTint="@android:color/holo_orange_dark" tools:targetApi="lollipop">
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="697dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:autofillHints=""
+                    android:backgroundTint="@android:color/holo_orange_dark"
+                    android:gravity="start"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp"
+                    tools:targetApi="lollipop">
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/_show_password_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:alpha=".5"
+                    android:onClick="ShowAndHidePassword"
+                    android:padding="5dp"
+                    android:layout_marginTop="20sp"
+                    android:src="@drawable/show_password"
+                    android:contentDescription="@string/empty" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:hint="@string/phoneNumber"
+                android:inputType="phone"
+                android:autofillHints=""
+                android:backgroundTint="@android:color/holo_orange_dark" tools:targetApi="lollipop">
+            </EditText>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:textSize="20sp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                android:autofillHints=""
+                android:backgroundTint="@android:color/holo_orange_dark" tools:targetApi="lollipop">
+            </EditText>
+
+            <Button
+                android:id="@+id/createAccount"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="20sp"
+                android:text="@string/createAccount"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:background="@drawable/login_signup_button">
+            </Button>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>

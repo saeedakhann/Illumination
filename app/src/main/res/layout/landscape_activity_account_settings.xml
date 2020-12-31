@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5DC"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/landscape_header" />
+
+        <Button
+            android:id="@+id/editAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/editAccount"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+        <Button
+            android:id="@+id/deleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/deleteAccount"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50sp"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150sp"
+                android:layout_marginTop="20sp"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/logo">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/appTitle"
+                android:layout_marginTop="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="10sp"
+                android:focusable="false"
+                android:text="@string/app_name"
+                android:textColor="#000000"
+                android:focusableInTouchMode="false"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/footer"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="80sp"
+            android:layout_marginStart="80sp"
+            android:layout_marginRight="80sp"
+            android:layout_marginEnd="80sp"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30sp">
+        </TextView>
+
+    </LinearLayout>
+
+</ScrollView>

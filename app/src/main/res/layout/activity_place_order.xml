@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5DC"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ad_view2"
+            android:layout_gravity="center"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+        </com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="@string/order_details"
+            android:textSize="25sp"
+            android:paddingBottom="40sp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_marginLeft="2sp"
+            android:layout_marginStart="2sp"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            app:srcCompat="@android:color/holo_orange_dark"
+            android:contentDescription="@string/empty" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:id="@+id/email"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="5sp"
+            android:layout_marginStart="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:id="@+id/address"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="5sp"
+            android:layout_marginStart="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:id="@+id/phone"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="5sp"
+            android:layout_marginStart="5sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:id="@+id/total_price"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="5sp"
+            android:layout_marginStart="5sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            app:srcCompat="@android:color/holo_orange_dark"
+            android:contentDescription="@string/empty" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30sp">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="0.5"
+                android:text="@string/cancel"
+                android:theme="@style/AppTheme1.Button"
+                android:textColor="#000000"
+                android:textSize="15sp">
+            </Button>
+
+            <Space
+                android:layout_width="80sp"
+                android:layout_height="wrap_content">
+            </Space>
+
+            <Button
+                android:id="@+id/Place_Order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="0.5"
+                android:theme="@style/AppTheme1.Button"
+                android:text="@string/place_order"
+                android:textColor="#000000"
+                android:textSize="15sp">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
