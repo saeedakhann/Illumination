@@ -17,3 +17,6 @@ All functionalities listed below will provide complete responsive UI design.
 8.	Display pop-up ads: Monetization and analytics
 9.	Add book review: Data storage, Content provider
 
+![image](https://user-images.githubusercontent.com/76696632/121768367-51de4500-cb77-11eb-800b-2f9e2d94d11f.png)
+![image](https://user-images.githubusercontent.com/76696632/121768407-818d4d00-cb77-11eb-9e65-5b7f9321134c.png)
+![image](https://user-images.githubusercontent.com/76696632/121768423-8eaa3c00-cb77-11eb-88ce-8879a4584aa6.png)
